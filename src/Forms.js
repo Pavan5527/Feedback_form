@@ -7,12 +7,8 @@ import './App.css';
 function Forms() {
 
     const { register, handleSubmit, formState: { errors } } = useForm()
-    const [setSelectedOption] = React.useState('');
-
-    const handleOptionChange = (event) => {
-        setSelectedOption(event.target.value);
-    };
-
+    
+    
     //    Form submission
     const onFormSubmission = (userObj) => {
         console.log(userObj)
